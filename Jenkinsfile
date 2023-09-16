@@ -17,7 +17,7 @@ pipeline {
   }
 
   environment {
-    SAMPLE_URL="example.com"
+    SAMPLE_URL="example.online"
   }
 
   stages {
