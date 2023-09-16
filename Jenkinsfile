@@ -28,7 +28,7 @@ pipeline {
         ok "Yes"
       }
       steps {
-        sh 'echo Hello Worldd'
+        sh 'echo Hello World'
         sh 'echo Hello Universe'
         sh 'echo ${SAMPLE_URL}'
         sh 'echo PERSON - ${PERSON}'
@@ -36,6 +36,9 @@ pipeline {
     }
 
     stage('Two') {
+      when {
+        GIT_BRANCH == "origin/test"
+      }
       steps {
         sh 'env'
       }
