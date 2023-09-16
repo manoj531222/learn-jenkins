@@ -24,7 +24,7 @@ pipeline {
 
     stage('One') {
       input {
-        message "wanna Approve?"
+        message "Do you Approve?"
         ok "Yes"
       }
       steps {
